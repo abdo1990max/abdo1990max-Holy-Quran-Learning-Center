@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مركز تعلم القرآن والإنجليزية</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=El+Messiri:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styel16/CS16.css">
+  <style>
+     </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-transparent fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-book-open" style="color: #1a5e2c;"></i>
+      </a>
+      <a href="#" class="text-decoration-none"><h2 class="nameof-resturant">مركز نور التعليمي</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">الرئيسية</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">الدورات</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <span>البرامج</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">تعلم الإنجليزية</a></li>
+              <li><a class="dropdown-item" href="#">حفظ القرآن الكريم</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">التجويد</a></li>
+              <li><a class="dropdown-item" href="#">القواعد</a></li>
+              <li><a class="dropdown-item" href="#">المزيد ...</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">من نحن</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="بحث..." />
+          <button class="btn me-2 text-white btn-search" type="submit">بحث</button>
+          <button type="button" class="btn login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">تسجيل دخول</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header text-white" style="background-color: #1a5e2c;">
+          <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">البريد الإلكتروني</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="example@domain.com">
+            </div>
+
+            <div class="mb-3">
+              <label for="passwordInput" class="form-label">كلمة المرور</label>
+              <input type="password" class="form-control" id="passwordInput">
+            </div>
+
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="rememberSwitch">
+              <label class="form-check-label text-muted" for="rememberSwitch">تذكرني</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-login" style="background-color: #1a5e2c; color: white;">تسجيل دخول</button>
+          <button type="button" class="btn text-white" data-bs-dismiss="modal" style="background-color: #555;">إغلاق</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+          <img src="styel16/images.jpg"
+               class="d-block w-100 img-fluid"
+               style="height: 85vh; object-fit: cover;"
+               alt="Slide 1">
+          <div class="overlay-box">
+            <h2>مركز نور التعليمي</h2>
+            <p>أفضل منصة لتعلم اللغة الإنجليزية وحفظ القرآن الكريم بمنهجية متطورة</p>
+            <a href="#" class="btn">اكتشف المزيد</a>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="styel16/دليل-تعلم-الانجليزية.webp"
+               class="d-block w-100 img-fluid"
+               style="height: 85vh; object-fit: cover;"
+               alt="Slide 2">
+          <div class="overlay-box">
+            <h2>تعلم الإنجليزية باحترافية</h2>
+            <p>دورات متخصصة لجميع المستويات مع معلمين مؤهلين</p>
+            <a href="#" class="btn">اكتشف المزيد</a>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="styel16/downl99oad.jpg"
+               class="d-block w-100 img-fluid"
+               style="height: 85vh; object-fit: cover;"
+               alt="Slide 3">
+          <div class="overlay-box">
+            <h2>حفظ وتجويد القرآن الكريم</h2>
+            <p>برامج متكاملة للحفظ والتلاوة مع مشايخ متخصصين</p>
+            <a href="#" class="btn">اكتشف المزيد</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </main>
+
+  <section class="container">
+    <div class="modal-welcome mt-5 welcome">
+      <h3>مرحباً بكم في مركز نور التعليمي</h3>
+      <p>مركز متخصص في تعليم اللغة الإنجليزية وحفظ القرآن الكريم وفق أحدث المناهج التعليمية. نقدم برامج دراسية متكاملة تلبي احتياجات جميع الفئات العمرية والمستويات التعليمية. مع فريق من المعلمين والمشايخ المؤهلين، نسعى لتحقيق أفضل النتائج التعليمية في جو تربوي إيماني.</p>
+      <button type="button" class="btn btn-welcome">
+        تعرف على فريقنا
+      </button>
+    </div>
+  </section>
+
+  <div class="container my-5">
+   <hr class="border border-success border-2 opacity-75">
+  </div>
+
+ <section>
+  <div class="d-pop container">
+    <h2>أهم البرامج التعليمية</h2>
+  </div>
+</section>
+
+<section class="bg-light py-4">
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+
+      <div class="accordion-item shadow-sm">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #e8f5e9; color: #1a5e2c; font-weight: bold;">
+            برنامج تعلم الإنجليزية المتكامل
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            برنامج شامل لتعلم اللغة الإنجليزية من الصفر وحتى الاحتراف، يشمل القواعد، المحادثة، الاستماع، والقراءة.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item shadow-sm">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #e8f5e9; color: #1a5e2c; font-weight: bold;">
+            برنامج حفظ القرآن الكريم
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            منهج متكامل لحفظ القرآن الكريم مع مراجعة مستمرة وتثبيت الحفظ وفق خطة منظمة.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item shadow-sm">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #e8f5e9; color: #1a5e2c; font-weight: bold;">
+            دورة تجويد القرآن الكريم
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            تعلم أحكام التجويد النظرية والعملية مع مشايخ متخصصين ومعتمدين.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid py-4">
+  <div class="container translate-box p-4 rounded shadow-sm mb-4 mx-auto">
+    <h4 class="text-center p-2 rounded">ترجمة من العربية إلى الإنجليزية</h4>
+    <p class="mt-3 mb-1 fw-bold">اكتب النص للترجمة <span class="text-w">اضغط هنا</span></p>
+    <button class="btn btn-sm mb-3" style="background-color: #1a5e2c; color: white;">
+      نسخ الترجمة
+    </button>
+    <textarea class="form-control" rows="4" placeholder="اكتب النص العربي هنا..."></textarea>
+  </div>
+
+  <div class="container translate-box p-4 rounded shadow-sm mb-4 mx-auto">
+    <h4 class="text-center p-2 rounded">ترجمة من الإنجليزية إلى العربية</h4>
+    <p class="mt-3 mb-1 fw-bold">اكتب النص للترجمة <span class="text-w">اضغط هنا</span></p>
+    <button class="btn btn-sm mb-3" style="background-color: #1a5e2c; color: white;">
+      نسخ الترجمة
+    </button>
+    <textarea class="form-control" rows="4" placeholder="Write English text here..."></textarea>
+  </div>
+</section>
+
+  <div class="container my-5">
+    <hr class="border border-success border-2 opacity-75">
+  </div>
+
+<section>
+  <div class="container mt-5">
+    <div class="attachment w-100 rounded-3"></div>
+  </div>
+</section>
+
+<section>
+  <div class="d-pop container d-flex justify-content-center align-items-center mt-5">
+    <h2 class="text-white">الدورات المميزة</h2>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card custom-card">
+        <img src="styel16/ima22ges.jpg" alt="English Course">
+        <div class="card-body">
+          <h5 class="card-title">الإنجليزية للمبتدئين</h5>
+          <p class="card-text">دورة شاملة لتعلم الأساسيات والقواعد والمحادثة للمبتدئين.</p>
+          <a href="#" class="btn">سجل الآن</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card custom-card">
+        <img src="styel16/IMG_558884.jpg" alt="Quran Course">
+        <div class="card-body">
+          <h5 class="card-title">حفظ الجزء الأخير</h5>
+          <p class="card-text">برنامج مكثف لحفظ الجزء الثلاثين من القرآن الكريم.</p>
+          <a href="#" class="btn">سجل الآن</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card custom-card">
+        <img src="styel16/dow55nload.jpg" alt="Conversation">
+        <div class="card-body">
+          <h5 class="card-title">المحادثة الإنجليزية</h5>
+          <p class="card-text">تطوير مهارات المحادثة والاستماع بطرق عملية وتفاعلية.</p>
+          <a href="#" class="btn">سجل الآن</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container pb-5">
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card custom-card">
+        <img src="styel16/504089700_4030572697231399_8288356858089476808_n.jpg" alt="Tajweed">
+        <div class="card-body">
+          <h5 class="card-title">أحكام التجويد</h5>
+          <p class="card-text">دورة متخصصة في أحكام التجويد النظري والتطبيقي.</p>
+          <a href="#" class="btn">سجل الآن</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card custom-card">
+        <img src="styel16/down11load.jpg" alt="Grammar">
+        <div class="card-body">
+          <h5 class="card-title">قواعد اللغة الإنجليزية</h5>
+          <p class="card-text">شرح مبسط لقواعد اللغة الإنجليزية مع تمارين تطبيقية.</p>
+          <a href="#" class="btn">سجل الآن</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card custom-card">
+        <img src="styel16/down33load.png" alt="Quran Memorization">
+        <div class="card-body">
+          <h5 class="card-title">حفظ سورة البقرة</h5>
+          <p class="card-text">برنامج خاص لحفظ سورة البقرة مع شرح المعاني والأحكام.</p>
+          <a href="#" class="btn">سجل الآن</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container mt-5">
+    <div class="attachment2 w-100 rounded-3"></div>
+  </div>
+</section>
+
+<section>
+  <div class="d-pop container d-flex justify-content-center align-items-center mt-5">
+    <h2 class="text-white">آراء طلابنا</h2>
+  </div>
+</section>
+
+<section class="container my-5">
+  <div class="row justify-content-center g-4">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+      <div class="card-thank">
+        <h6 class="thank-above">تجربة ممتازة</h6>
+        <p class="mb-3"><i class="far fa-clock"></i> يوليو 14, 2025</p>
+        <div class="pic-circle">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <p class="mb-0">أحمد محمد<br>طالب في برنامج الإنجليزية</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+      <div class="card-thank">
+        <h6 class="thank-above">أفضل مركز تعليمي</h6>
+        <p class="mb-3"><i class="far fa-clock"></i> يوليو 14, 2025</p>
+        <div class="pic-circle">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <p class="mb-0">سارة عبد الله<br>طالبة في برنامج القرآن</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+      <div class="card-thank">
+        <h6 class="thank-above">فريق تدريس مميز</h6>
+        <p class="mb-3"><i class="far fa-clock"></i> يوليو 14, 2025</p>
+        <div class="pic-circle">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <p class="mb-0">محمد خالد<br>طالب في برنامج التجويد</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container my-5">
+    <hr class="border border-success border-2 opacity-75">
+  </div>
+
+<section class="container my-5">
+  <h2 class="offers-title text-center mb-5">العروض الخاصة</h2>
+  <div class="row align-items-center rounded overflow-hidden podcast-box">
+    <div class="col-md-8 p-4">
+      <h5 class="fw-bold title-offers">خصم 30% على دورة الإنجليزية الشاملة</h5>
+      <p class="mb-1">
+        <i class="far fa-calendar-alt me-1 text-primary"></i> حتى 30 أغسطس 2025</p>
+        <div class="line-offers"></div>
+        <p>
+        احصل على خصم 30% عند التسجيل في دورة الإنجليزية الشاملة التي تشمل جميع المستويات والمهارات.
+       </p>
+      <div class="d-flex flex-wrap gap-2 mt-3">
+        <span class="badge bg-secondary">عرض محدود</span>
+        <a href="#" class="btn episode">
+          <i class="fas fa-info-circle me-1"></i>التفاصيل</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="styel16/down221load.jpg" alt="Offer" class="offer-pic img-fluid">
+    </div>
+  </div>
+  
+  <div class="row align-items-center rounded overflow-hidden podcast-box mt-4">
+    <div class="col-md-8 p-4">
+      <h5 class="fw-bold title-offers">حفظ القرآن مع خصم 30%</h5>
+      <p class="mb-1">
+        <i class="far fa-calendar-alt me-1 text-primary"></i> حتى 15 سبتمبر 2025</p>
+        <div class="line-offers"></div>
+        <p>
+        عروض خاصة على برامج حفظ القرآن الكريم مع خصم 25% للطلاب الجدد مع هدايا قيمة.
+       </p>
+      <div class="d-flex flex-wrap gap-2 mt-3">
+        <span class="badge bg-secondary">عرض محدود</span>
+        <a href="#" class="btn episode">
+          <i class="fas fa-info-circle me-1"></i>التفاصيل</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="styel16/downloa334d.jpg" alt="Offer" class="offer-pic img-fluid">
+    </div>
+  </div>
+</section>
+
+<section class="join">
+  <div class="container">
+    <div class="title-join"> 
+      <h2>انضم إلينا</h2>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center gap-3 p-3">
+      
+      <a href="#" class="text-decoration-none">
+        <div class="items text-center">
+          <h5><i class="fab fa-whatsapp me-2"></i>واتساب</h5>
+          <h6 class="h62">انضم لمجموعتنا</h6>
+        </div>
+      </a>
+
+      <a href="#" class="text-decoration-none">
+        <div class="items text-center">
+          <h5><i class="fab fa-telegram me-2"></i>تلجرام</h5>
+          <h6 class="h62">انضم لقناتنا</h6>
+        </div>
+      </a>
+
+      <a href="#" class="text-decoration-none">
+        <div class="items text-center">
+          <h5><i class="fab fa-youtube me-2"></i>يوتيوب</h5>
+          <h6 class="h62">اشترك في القناة</h6>
+        </div>
+      </a>
+
+      <a href="#" class="text-decoration-none">
+        <div class="items text-center">
+          <h5><i class="fab fa-instagram me-2"></i>إنستغرام</h5>
+          <h6 class="h62">تابعنا</h6>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container-fluid foot">
+    <div class="row text-center gy-4">
+
+      <div class="col-12 col-md-4">
+        <div class="line-foot"></div>
+        <div class="img-foot">
+          <i class="fas fa-book"></i>
+        </div>
+        <span class="spn-foot">مركز نور التعليمي</span>
+        <p class="foot-hover">هاتف: 000.000.000</p>
+        <p class="foot-hover">العنوان: مصر</p>
+        <p class="foot-hover">البريد: info@example.com</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="line-foot"></div>
+        <div class="img-foot">
+          <i class="fas fa-clock"></i>
+        </div>
+        <span class="spn-foot">أوقات العمل</span>
+        <p class="foot-hover">الأحد - الخميس: 8 ص - 10 م</p>
+        <p class="foot-hover">الجمعة - السبت: 10 ص - 4 م</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="line-foot"></div>
+        <div class="img-foot">
+          <i class="fas fa-link"></i>
+        </div>
+        <span class="spn-foot">روابط سريعة</span>
+        <a href="#" class="foot-hover">البرامج التعليمية</a>
+        <a href="#" class="foot-hover">المعلمون</a>
+        <a href="#" class="foot-hover">اتصل بنا</a>
+      </div>
+      
+      <div class="col-12 mt-4">
+        <div class="line-foot"></div>
+        <h4 class="end-fooot">جميع الحقوق محفوظة © 2025 مركز نور التعليمي</h4>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Copy functionality for translation buttons
+    document.querySelectorAll('.translate-box .btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const textarea = btn.parentElement.querySelector('textarea');
+        if (textarea.value.trim() !== '') {
+          navigator.clipboard.writeText(textarea.value)
+            .then(() => {
+              alert('تم نسخ الترجمة بنجاح!');
+            })
+            .catch(err => {
+              console.error('Error copying text: ', err);
+            });
+        } else {
+          alert('الرجاء إدخال نص للترجمة أولاً');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
